@@ -5,7 +5,7 @@ using UnityEngine;
 public class Three : MonoBehaviour
 {
 
-    private int clickCounter;
+    private int clickCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,16 +16,16 @@ public class Three : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             AddOneToCounter();
-
+            if (clickCounter == 10)
+            {
+                Debug.Log($"GAME OVER");
+            }
         }
 
-        if(clickCounter >= 10)
-        {
-            Debug.Log($"GAME OVER");
-        }
+        
     }
 
     private void AddOneToCounter()

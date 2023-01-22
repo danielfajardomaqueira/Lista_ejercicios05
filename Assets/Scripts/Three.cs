@@ -18,10 +18,10 @@ public class Three : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            AddOneToCounter();
+            AddOneToCounter();  //sum function
             if (clickCounter == 10)
             {
-                Debug.Log($"GAME OVER");
+                Debug.Log($"GAME OVER"); //Game Over Mechanic.
             }
         }
 
@@ -30,6 +30,6 @@ public class Three : MonoBehaviour
 
     private void AddOneToCounter()
     {
-        clickCounter++;
+        clickCounter++; //sum the number of "clicks" of the key.
     }
 }

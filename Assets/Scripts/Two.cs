@@ -20,7 +20,7 @@ public class Two : MonoBehaviour
         
     }
 
-    private bool Login(string Username, string Password)
+    private bool Login(string Username, string Password) //function to do a login process.
     {
         if (Username == "admin" && Password == "abccba")
         {

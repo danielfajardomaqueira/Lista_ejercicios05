@@ -5,7 +5,7 @@ using UnityEngine;
 public class Four : MonoBehaviour
 {
 
-    public float[] elements = { 10, -13, -100, 101, 7 };
+    public float[] elements = { 10, -13, -100, 101, 7 }; //define the number of elements in the array.
 
     // Start is called before the first frame update
     void Start()

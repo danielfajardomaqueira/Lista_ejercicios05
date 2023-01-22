@@ -10,7 +10,7 @@ public class Five : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(elements.Length >= 5 )
+        if(elements.Length >= 5) //Defines the length of the array to check how many elements it has.
         {
             Debug.Log($"First element = {elements[0]}");
             Debug.Log($"Third element = {elements[2]}");
